@@ -69,6 +69,14 @@ const routes = [
     }
   },
   {
+    path: 'user-mask',
+    loadChildren: 'app/user-mask/user-mask.module#UserMaskModule',
+    canActivate: [AppGuard, PermissionGuard],
+    data: {
+      permissions: 'user-mask'
+    }
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'

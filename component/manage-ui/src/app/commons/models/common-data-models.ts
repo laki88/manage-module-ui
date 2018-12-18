@@ -262,3 +262,8 @@ export class UpdatedRate {
     comment : string;
 }
 
+export class UserMask {
+    msisdn : string;
+    mask : string;
+}
+

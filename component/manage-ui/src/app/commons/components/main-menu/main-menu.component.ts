@@ -29,7 +29,8 @@ export class MainMenuComponent implements OnInit {
         { id: 12, route: '/blacklist/apiwise', name: 'API Wise Blacklist', position: 'child', iconName: 'developer_board', pattern: 'apiBlacklist' },
         { id: 13, route: '/blacklist/spwise', name: 'Sp Wise Blacklist', position: 'child', iconName: 'dns', pattern: 'spBlackList' },
         { id: 14, route: '/whitelist', name: 'Whitelist', position: 'parent', iconName: 'phonelink_ring', pattern: 'whiteList' },
-        { id: 15, route: '/edit-subscription', name: 'Subscription', position: 'parent', iconName: 'assignment', pattern: 'edit-subscription' }
+        { id: 15, route: '/edit-subscription', name: 'Subscription', position: 'parent', iconName: 'assignment', pattern: 'edit-subscription' },
+        { id: 16, route: '/user-mask', name: 'User Mask', position: 'parent', iconName: 'enhanced_encryption', pattern: 'edit-subscription' }
     ];
 
 

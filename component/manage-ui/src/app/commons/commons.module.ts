@@ -4,6 +4,8 @@ import {AuthenticationService} from './services/authentication.service';
 import {RateService} from './services/rate.service';
 import {BlackListWhiteListService} from './services/blacklist_whitelist.service';
 import {QuotaService} from './services/quotacap.service';
+import {UserMaskRemoteDataService} from '../data-providers/usermask-remote-data.service';
+import {UserMaskService} from './services/usermask.service'
 import {LoginRemoteDataService} from '../data-providers/login_remote-data.service';
 import {AppCommonService} from './services/app-common.service';
 import {MessageService} from './services/message.service';
@@ -25,7 +27,9 @@ import { TimerService } from './services/timer.service';
         RateService,
         BlackListWhiteListService,
         QuotaService,
-        TimerService],
+        TimerService,
+        UserMaskService,
+        UserMaskRemoteDataService],
     exports: []
 })
 export class CommonsModule {
