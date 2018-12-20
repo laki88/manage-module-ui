@@ -1,0 +1,63 @@
+<div class="animated fadeInUp row" style="animation-delay: 0.1s">
+    <div class="col-sm-12">
+        <div class="form-container userMaskConverterInputContainer">
+            <div class="tbl-header">
+                Get User Mask
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <form class="form-horizontal">
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3 col-form-label">MSISDN <span>*</span></label>
+                            <div class="col-sm-3">
+                                <input class="form-control" 
+                                [(ngModel)]="smMSISDN"
+                                 type="text"
+                                 name="msisdn">    
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="btn btn-primary form-control"
+                                (click)= "getUserMask()">Convert</a>
+                            </div>
+                        </div>
+                        <div *ngIf="showMask" class="form-group row">
+                                <label class="control-label col-sm-3 col-form-label">Mask :</label>
+                                <div class="col-sm-3">
+                                    <label class="control-label">{{smMask}}</label> 
+                                </div>                        
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="col-xs-12">
+            <div class="tbl-header">
+                Get User Id
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <form class="form-horizontal">
+                        <div class="form-group row">
+                            <label class="control-label col-sm-3 col-form-label">User Mask <span>*</span></label>
+                            <div class="col-sm-3">
+                                <input class="form-control" 
+                                [(ngModel)]="suMask"
+                                 type="text"
+                                 name="mask">    
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="btn btn-primary form-control"
+                                (click)= "getUserId()">Convert</a>
+                            </div>
+                        </div>
+                        <div *ngIf="showUserId" class="form-group row">
+                                <label class="control-label col-sm-3 col-form-label">User Id :</label>
+                                <div class="col-sm-3">
+                                    <label class="control-label">{{suMSISDN}}</label> 
+                                </div>                        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

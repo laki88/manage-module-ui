@@ -1,0 +1,29 @@
+@import "/../../../styles/colors";
+@import "/../../../styles/mixing";
+
+:host {
+  display: block;
+  margin-top: 20px;
+}
+
+.content-div {
+  background-color: #ffffff;
+}
+
+.tbl-header {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 5px 0px 15px;
+    color: #E19131;
+    text-transform: uppercase;
+  }
+  
+
+.userMaskConverterInputContainer {
+  min-height: 100px;
+  padding: 10px;
+  background-color: white;
+  border: solid 1px whitesmoke;
+  overflow: initial;
+}
