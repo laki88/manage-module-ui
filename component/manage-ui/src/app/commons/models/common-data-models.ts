@@ -263,7 +263,7 @@ export class UpdatedRate {
 }
 
 export class UserMask {
-    msisdn : string;
+    userId: string;
     mask : string;
 }
 
